@@ -61,9 +61,10 @@ namespace SchoStack.Web.FluentValidation
             {
                 var valtype = inlineval.GetType();
                 IValidator val = null;
-                if (valtype == typeof(ChildCollectionValidatorAdaptor))
-                    val = ((ChildCollectionValidatorAdaptor)inlineval).Validator;
-                else if (valtype == typeof(ChildValidatorAdaptor))
+                //if (valtype == typeof(ChildCollectionValidatorAdaptor))
+                    //val = ((ChildCollectionValidatorAdaptor)inlineval).Validator;
+                //else 
+                    if (valtype == typeof(ChildValidatorAdaptor))
                     val = ((ChildValidatorAdaptor)inlineval).Validator;
 
                 if (i == propertyInfo.Count - 1)

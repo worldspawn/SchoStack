@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using HtmlTags;
 using SchoStack.Web.Conventions.Core;
 using SchoStack.Web.Html;
+using CompareAttribute = System.ComponentModel.DataAnnotations.CompareAttribute;
 
 namespace SchoStack.Web.Conventions
 {
