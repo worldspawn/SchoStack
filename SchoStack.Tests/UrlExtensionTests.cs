@@ -64,6 +64,7 @@ namespace SchoStack.Tests
         [Test]
         public void UrlForInterfaceShouldReturnCorrectUrl1()
         {
+            ActionFactory.Actions.Clear();
             ActionFactory.Actions.Add(typeof(TestUrl), new ActionInfo() { });
             RouteTable.Routes.Add(typeof(TestUrl).FullName, new Route("fakeUrl/{Age}/edit", null));
 
